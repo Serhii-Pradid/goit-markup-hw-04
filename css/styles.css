@@ -144,6 +144,10 @@ img {
   margin-left: 50px;
 }*/
 
+.icon-color {
+  margin-right: 10px;
+}
+
 .contacts a {
   color: #757575;
   font-weight: 500;
@@ -158,12 +162,30 @@ img {
   color: var(--accent-color);
 }
 
+.contacts a:hover .icon-color,
+.contacts a:focus .icon-color {
+  fill: var(--accent-color);
+}
+
 /*hero*/
 
 .hero {
   background-color: var(--main-background-color);
   color: #ffff;
   text-align: center;
+}
+
+/*багатошаровий фон*/
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
