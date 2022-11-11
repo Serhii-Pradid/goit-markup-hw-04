@@ -339,6 +339,38 @@ margin-left: 30px;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.1875;
+  margin-bottom: 16px;
+}
+
+/*оформление иконок соц.сетей*/
+
+.networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-networks {
+  width: 44px;
+  height: 44px;
+}
+
+.network-link {
+  width: 100%;
+  height: 100%;
+  /*background-color: blue;*/
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.network-link:hover {
+  background-color: var(--accent-color);
+}
+
+.network-link:hover .networks-icon {
+  fill: #ffffff;
 }
 
 .team-review .item {
@@ -346,6 +378,42 @@ margin-left: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
+}
+
+/*Постійні клієнти*/
+
+.clients {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.client-logo {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-logo:hover {
+  border-color: var(--accent-color);
+}
+
+.client-logo:hover .client-icon {
+  fill: var(--accent-color);
 }
 
 /*footer*/
