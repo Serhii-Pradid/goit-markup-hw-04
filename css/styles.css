@@ -464,6 +464,53 @@ margin-left: 30px;
   color: var(--accent-color);
 }
 
+.join {
+  margin-left: 70px;
+}
+
+.join-us {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-networks {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.company-networks {
+  width: 44px;
+  height: 44px;
+}
+
+.company-network-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
+}
+
+.company-network-link:hover {
+  background-color: var(--accent-color);
+}
+
+.main-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 /* ПОРТФОЛІО*/
 
 .portfolio-buttons {
