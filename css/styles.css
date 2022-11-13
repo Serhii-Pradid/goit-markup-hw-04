@@ -146,15 +146,18 @@ img {
 
 .icon-color {
   margin-right: 10px;
+  fill: var(--main-text-color);
 }
 
 .contacts a {
+  display: flex;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   text-decoration: none;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 
 .contacts a:hover,
@@ -235,7 +238,6 @@ img {
 
 .picture {
   display: flex;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -370,7 +372,8 @@ margin-left: 30px;
   fill: #afb1b8;
 }
 
-.network-link:hover {
+.network-link:hover,
+.network-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -404,20 +407,21 @@ margin-left: 30px;
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-}
 
-.client-logo {
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-logo:hover {
+.client-logo {
+  height: 92px;
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.client-link:hover {
   border-color: var(--accent-color);
 }
 
-.client-logo:hover .client-icon {
+.client-link:hover .client-icon {
   fill: var(--accent-color);
 }
 
@@ -507,7 +511,8 @@ margin-left: 30px;
   fill: #ffffff;
 }
 
-.company-network-link:hover {
+.company-network-link:hover,
+.company-network-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -580,7 +585,8 @@ margin-left: 30px;
   display: block;
 }
 
-.example-link:hover {
+.example-link:hover,
+.example-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
