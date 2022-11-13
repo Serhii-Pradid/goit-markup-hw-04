@@ -377,7 +377,8 @@ margin-left: 30px;
   background-color: var(--accent-color);
 }
 
-.network-link:hover .networks-icon {
+.network-link:hover .networks-icon,
+.network-link:focus .networks-icon {
   fill: #ffffff;
 }
 
@@ -417,11 +418,13 @@ margin-left: 30px;
   flex-basis: calc((100% - 150px) / 6);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
